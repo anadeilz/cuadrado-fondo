@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="cuadrado yellow" onmouseenter="cambiarFondo('yellow')"></div>
+        <div class="cuadrado hotpink" onmouseenter="cambiarFondo('hotpink')"></div>
+        <div class="cuadrado turquoise" onmouseenter="cambiarFondo('turquoise')"></div>
+        <div class="cuadrado lawngreen" onmouseenter="cambiarFondo('lawngreen')"></div>
+    </div>
+    <style>
+        .contenedor {
+            display: flex; padding: 100px;
+        }
+
+        .cuadrado {
+            height: 200px;
+            width: 200px;
+            cursor: pointer; justify-content: center;
+            
+
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .hotpink {
+            background-color: hotpink;
+        }
+
+        .turquoise {
+            background-color: turquoise;
+        }
+
+        .lawngreen {
+            background-color: lawngreen;
+        }
+    </style>
+
+
+    <script>
+        function cambiarFondo(color) {
+            document.querySelector('body').style.background = color
+        }
+    </script>
+</body>
+
+</html>
